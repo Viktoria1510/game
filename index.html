@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="body">
+    <header>
+      <img class="logo" title="Reset Game" src="https://toplogos.ru/images/logo-smeshariki.png" alt="Pokemon">
+    </header>
+    <div class="playground">
+      <div style="position: relative;">
+        <div class="player character">
+          <div id="turn-arrow"><div>⪧</div></div>
+          <span class="lvl">Lv. 1</span>
+
+          <img src="https://vignette.wikia.nocookie.net/fanonsmesh/images/6/68/%D0%9A%D1%80%D0%BE%D1%88_%D0%BF%D0%BE%D0%B4%D0%BC%D0%B8%D0%B3%D0%B8%D0%B2%D0%B0%D0%B5%D1%82.png/revision/latest?cb=20180801091351&path-prefix=ru" class="sprite">
+
+          <div class="details">
+            <h2 class="name" id="name-character">
+              Крош
+            </h2>
+            <div class="hp">
+              <div class="bar">
+                <div class="health" id="progressbar-character" style="width: 100%;"></div>
+              </div>
+              <span class="text" id="health-character">100 / 100</span>
+            </div>
+          </div>
+        </div>
+        <div class="control">
+          <button class="button" id="character-btn-kick">
+            Атака!
+          </button>
+        </div>
+      </div>
+
+      <div style="position: relative;">
+        <div class="player enemy">
+          <span class="lvl">Lv. 1</span>
+
+          <img src="https://static.wikia.nocookie.net/smesharikiarhives/images/b/b7/%D0%81%D0%B6%D0%B8%D0%BA_%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%BD%D1%8B%D0%B9_%D0%B7%D0%BD%D0%B0%D0%BA.png/revision/latest?cb=20200929162643&path-prefix=ru" class="sprite">
+
+          <div class="details">
+            <h2 class="name" id="name-enemy">
+              Йожик
+            </h2>
+            <div class="hp">
+              <div class="bar">
+                <div class="health" id="progressbar-enemy" style="width: 100%;"></div>
+              </div>
+              <span class="text" id="health-enemy">100 / 100</span>
+            </div>
+          </div>
+        </div>
+        <div class="control">
+          <button class="button" id="enemy-btn-kick">
+            Атака! 
+          </button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="catch_screen"></div>
+  <div id="victory-screen">
+    <div class="inside-victory">
+      <span id="victory-text"></span>
+      <img id="victory-image"/>
+      <div id="restart">Заново</div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
